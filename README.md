@@ -1,2 +1,4 @@
 # pacman
-Pacman game (C programming language)
+
+Pacman game has been created by using "bgi" graphic libraries.
+ 
