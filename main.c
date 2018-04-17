@@ -87,7 +87,7 @@ void main()
 void homepage()
 {
 	int i, j, k, kop;
-	readimagefile("yazý.bmp", 75, 50, 925, 200);
+	readimagefile("yazÃ½.bmp", 75, 50, 925, 200);
 	setcolor(WHITE);
 	circle(825, 250, 6);
 	for (i = 0; i <= 880; i = i + 10)
@@ -197,7 +197,7 @@ void homepage()
 	outtextxy(400, 550, "Please Press Any Key....");
 	settextstyle(9, 0, 1);
 	setcolor(BLUE);
-	outtextxy(100, 650, "Cansu YAÞAR");
+	outtextxy(100, 650, "Cansu YAÃžAR");
 	outtextxy(400, 650, "Serhat ATAMAN");
 	outtextxy(750, 650, "Ebru KAPAN");
 	while (1)
@@ -840,10 +840,10 @@ void theend()
 	menu();
 }
 void oldplace()
-{//Yeni oyun olduðunda eski yerlerin gözükmesi için 
+{//Yeni oyun olduÃ°unda eski yerlerin gÃ¶zÃ¼kmesi iÃ§in 
 	for (k = 0; k<4; ++k){
 		wall[perrc[k][0]][perrc[k][1]] = place[perrc[k][0]][perrc[k][1]];
-		setfillstyle(1, 0); //Önceki yerlerinin silinmesi için
+		setfillstyle(1, 0); //Ã–nceki yerlerinin silinmesi iÃ§in
 		bar(pervar[k][0], pervar[k][1], (pervar[k][0] + 30), (pervar[k][1] + 30));
 	}
 	pervar[0][0] = 30; pervar[0][1] = 30; pervar[1][0] = 690; pervar[1][1] = 30; pervar[2][0] = 360;
@@ -982,9 +982,9 @@ void scoretab()
 	newscore = foodscore;
 	settextstyle(1, 0, 3);
 	playerscoreread = fopen("scores.txt", "r");
-	for (i = 0; i<5; i++)//Puanlarý okuma
+	for (i = 0; i<5; i++)//PuanlarÃ½ okuma
 		fscanf(playerscoreread, "%s%d", &people[i].name, &people[i].mark);
-	for (i = 0; i<5; i++)//Puan sýralamasý
+	for (i = 0; i<5; i++)//Puan sÃ½ralamasÃ½
 	if (newscore >= people[i].mark)
 		break;
 	fclose(playerscoreread);
